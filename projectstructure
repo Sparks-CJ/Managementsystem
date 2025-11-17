@@ -1,0 +1,29 @@
+mern-food-management/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── FoodList.jsx
+│   │   │   ├── FoodForm.jsx
+│   │   │   └── Header.jsx
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── vite-env.d.ts
+│   ├── package.json
+│   └── vite.config.js
+├── server/
+│   ├── server.js
+│   ├── src/
+│   │   ├── app.js
+│   │   ├── controllers/
+│   │   │   └── foodController.js
+│   │   ├── models/
+│   │   │   └── FoodItem.js
+│   │   └── routes/
+│   │       └── food.js
+│   ├── tests/
+│   │   └── posts.test.js   (rename/match to food.test.js below)
+│   ├── package.json
+│   └── .env.example
+├── .github/workflows/main.yml
+└── README.md
