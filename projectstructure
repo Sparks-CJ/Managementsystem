@@ -1,29 +1,40 @@
-mern-food-management/
+mern-food-app/
 ├── client/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── FoodList.jsx
-│   │   │   ├── FoodForm.jsx
-│   │   │   └── Header.jsx
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── vite-env.d.ts
+│   ├── index.html
 │   ├── package.json
-│   └── vite.config.js
+│   ├── vite.config.js
+│   ├── .env.example
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── api.js
+│       ├── context/
+│       │   └── AuthContext.jsx
+│       ├── pages/
+│       │   ├── Login.jsx
+│       │   ├── Register.jsx
+│       │   └── Dashboard.jsx
+│       └── components/
+│           ├── FoodForm.jsx
+│           └── FoodList.jsx
+│
 ├── server/
-│   ├── server.js
-│   ├── src/
-│   │   ├── app.js
-│   │   ├── controllers/
-│   │   │   └── foodController.js
-│   │   ├── models/
-│   │   │   └── FoodItem.js
-│   │   └── routes/
-│   │       └── food.js
-│   ├── tests/
-│   │   └── posts.test.js   (rename/match to food.test.js below)
 │   ├── package.json
-│   └── .env.example
-├── .github/workflows/main.yml
+│   ├── server.js
+│   ├── .env.example
+│   └── src/
+│       ├── app.js
+│       ├── controllers/
+│       │   ├── authController.js
+│       │   └── foodController.js
+│       ├── models/
+│       │   ├── User.js
+│       │   └── FoodItem.js
+│       ├── routes/
+│       │   ├── auth.js
+│       │   └── food.js
+│       └── middleware/
+│           └── auth.js
+│
 └── README.md
+
